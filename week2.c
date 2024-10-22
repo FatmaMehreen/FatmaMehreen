@@ -16,9 +16,7 @@
 
 int askordertype();
 int  exitapplication();
-int paymentmethod();
 int adminoperation();
-int pricelist();
 
 
 int main(){
@@ -34,4 +32,7 @@ int askordertype() {
 
 
 int exitapplication(){
+}
+
+int adminoperation(){
 }
