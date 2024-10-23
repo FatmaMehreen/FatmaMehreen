@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
+// defining constants
 #define coffeebeans 8
 #define water 30
 #define milkforespresso 0
@@ -15,6 +15,7 @@
 #define milkthreshold 70
 #define chocthreshold 30
 
+// function declaration
 int menu();
 int askordertype();
 int exitapplication();
@@ -33,7 +34,7 @@ double totalSales = 0.0;
 int main() {
     int askuserchoice;
     
-     srand(time(NULL));
+     srand(time(NULL)); //to randomize the seed
 
     // Initialize ingredients with random values within a range
     currentCoffeeBeans = rand() % 101; // Random value from 0 to 100
@@ -60,6 +61,7 @@ int main() {
     return 0;
 }
 
+// function for the user to place order
 int askordertype() {
     int order;
     int confirm;
@@ -109,6 +111,7 @@ int askordertype() {
     return 0;
 }
 
+// function to display menu to the user
 int menu() {
     printf("The items are Espresso, Cappuccino, Mocha\n");
     printf("The price for Espresso is %.2f\n", espressoPrice);
@@ -118,6 +121,7 @@ int menu() {
     return 0;
 }
 
+// function for payment specifications
 int paymentmethod(double price) {
     double amountPaid = 0.0;
     double coin;
