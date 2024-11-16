@@ -81,7 +81,7 @@ bool found_duplicate(const int arr[], int length) {
 }
 
 int main() {
-    int arr[SIZE] = {10, 20, 30, 40, 50, 10, 20, 30, 40, 50, 10, 20, 30, 40, 50, 10, 20, 30, 40, 50, 10, 20, 30, 40};
+    int arr[SIZE] ={10, 20, 30, 40, 50, 60, 70, 80, 90, 10, 20, 30, 40, 50, 60, 70, 80, 90, 10, 20, 30, 40, 50, 60};
     int arr2D[nROWS][nCOLS];
 
     // Test remove_element
