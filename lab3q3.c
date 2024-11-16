@@ -192,3 +192,4 @@ void display_club_statistics() {
 void handle_error(const char *msg) {
     printf("Error: %s\n", msg);
 }
+
